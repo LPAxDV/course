@@ -3,7 +3,7 @@ WITH raw_airports AS (
 )
 
 SELECT 
-    ID            AS AIRPORT_ID,
+    ID            AS AIRPORT_ID_TEST,
     IDENT         AS AIRPORT_IDENT,
     TYPE          AS AIRPORT_TYPE,
     NAME          AS AIRPORT_NAME,
