@@ -16,4 +16,4 @@ SELECT
     IATA_CODE,
     GPS_CODE
 FROM 
-    raw_airports
+    raw_airports-- test ci
