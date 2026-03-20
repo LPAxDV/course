@@ -3,7 +3,7 @@ WITH raw_airports AS (
 )
 
 SELECT 
-    ID            AS AIRPORT_ID_TEST,
+    ID            AS AIRPORT_ID,
     IDENT         AS AIRPORT_IDENT,
     TYPE          AS AIRPORT_TYPE,
     NAME          AS AIRPORT_NAME,
@@ -16,5 +16,4 @@ SELECT
     IATA_CODE,
     GPS_CODE
 FROM 
-    raw_airports-- test ci
--- break ci
+    raw_airports
