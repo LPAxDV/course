@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: int_runways_clean
+    columns:
+      - name: runway_id
+        tests: [not_null, unique]
+
+      - name: length_ft
+        tests:
+          - not_null

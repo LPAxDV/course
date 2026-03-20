@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: int_comments_clean
+    columns:
+      - name: airport_id
+        tests:
+          - relationships:
+              arguments:
+                to: ref('int_airports_clean')
+                field: AIRPORT_ID

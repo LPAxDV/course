@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+  - name: airstats
+    schema: raw
+    tables:
+      - name: airports
+        identifier: airports
+
+      - name: airport_comments
+        identifier: airport_comments
+        loaded_at_field: loaded_at
+        config:
+          freshness:
+            warn_after: {count: 5, period: day}
+            error_after: {count: 10, period: day}
+
+      - name: runways
+        identifier: runways

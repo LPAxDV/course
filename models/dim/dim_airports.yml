@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: dim_airports
+    columns:
+      - name: AIRPORT_ID
+        tests:
+          - not_null
+          - unique

@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: int_airports_clean
+    description: "Staging airports data"
+
+    columns:
+      - name: AIRPORT_ID
+        tests:
+          - not_null
+          - unique
